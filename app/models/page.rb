@@ -29,6 +29,10 @@ class Page
     "txmt://open?url=file://#{path}"
   end
   
+  def macvim_url
+    "mvim://open?url=file://#{path}"
+  end
+  
   def save
     file = File.new(path, "w")
     file.write(@body)

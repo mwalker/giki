@@ -9,7 +9,8 @@
 
   <p>
     <%= link_to("Edit", edit_project_page_path(@project, @page)) %> |
-    <%= link_to("Open in TextMate", @page.textmate_url) %>
+    <%= link_to("Open in TextMate", @page.textmate_url) %> |
+    <%= link_to("Open in MacVim", @page.macvim_url) %>
   </p>
 <% end %>
 
